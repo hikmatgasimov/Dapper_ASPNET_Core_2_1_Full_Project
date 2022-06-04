@@ -1,0 +1,117 @@
+﻿@*@{
+        Layout = null;
+    }*@
+
+@model ASPNET_Core_2_1.Models.ListCins
+
+@*<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <environment names="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/lib/font-awesome/css/font-awesome.css" />
+        <link rel="stylesheet" href="~/css/animate.css" />
+        <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+    </environment>
+    <environment names="Staging,Production">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/lib/font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="~/css/animate.css" />
+        <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+    </environment>
+
+
+</head>*@
+@*<body class="gray-bg">*@
+    <div class="container">
+        <div class="col-8">
+            <div class="ibox">
+                <div class="ibox-title">
+                    <h5>Qeydiyyat Sehifesi</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li>
+                                <a href="#" class="dropdown-item">Config option 1</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">Config option 2</a>
+                            </li>
+                        </ul>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <form asp-action="Qeydiyyat" asp-controller="Form" method="post">
+                        <div class="form-group row ">
+                            <label class="col-sm-2 col-form-label">ad</label>
+                            <div class="col-lg-10">
+                                <input class="form-control" type="text" name="ad" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label">soyad</label>
+                            <div class="col-lg-10">
+                                <input class="form-control" type="text" name="soyad" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-2  col-form-label">ata adi</label>
+                            <div class="col-lg-10">
+                                <input class="form-control" type="text" name="ataadi" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-2  col-form-label">yas</label>
+                            <div class="col-lg-10">
+                                <input class="form-control" type="text" name="yas" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label">dogum tarixi</label>
+                            <div class="col-lg-10">
+                                <input class="form-control" type="date" name="dogumtarixi" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label">email</label>
+                            <div class="col-lg-10">
+                                <input class="form-control" type="email" name="email" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label">parol</label>
+                            <div class="col-lg-10">
+                                <input class="form-control" type="password" name="parol" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label">qeydiyyat kodu</label>
+                            <div class="col-lg-10">
+                                <input class="form-control" type="password" name="qeydiyyatkodu" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-lg-offset-2 col-lg-10">
+                                <button type="submit" class="btn btn-sm btn-white" value="add" name="prs">Tesdiq et</button>
+                                <button type="submit" class="btn btn-sm btn-white" formaction="Giris" formmethod="get">Giris sehifesi</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+@*</body>
+</html>*@
